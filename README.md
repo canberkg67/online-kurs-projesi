@@ -7,7 +7,7 @@ NextJS, ShadCN, AuthJS Credentials Provider, Prisma, SQLite
 
 **Hesap Bilgileri:**
 - Admin Hesabı: email - adminkurs@example.com / şifre - 123admin123
-- Örnek User Hesabı: email - testkurs@example.com / şifre - 123kurs123
+- Örnek User Hesabı: email - testkurs@example.com / şifre - 123test123
 
 **Kurulum:**
 - npm install ile gerekli node_modules klasörünü yükleyin.
