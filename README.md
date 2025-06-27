@@ -11,6 +11,7 @@ NextJS, ShadCN, AuthJS Credentials Provider, Prisma, SQLite
 
 **Kurulum:**
 - npm install ile gerekli node_modules klasörünü yükleyin.
+- npx prisma generate deyin. Bunu demezsin prisma işlemleri ve dolayısıyla giriş-veritabanı işlemi yapılamaz.
 - npm run dev ile geliştirme sunucusu açabilirsiniz.
 - Giriş yapan kullanıcı yukarıdaki admin hesabı ise admin dashboardına,user rolünde ise profile yönlendirilmektedir.
 - Ders ekleme ve düzenleme,kullanıcı silme admine has işlevlerdir.Kullanıcılar profillerinden butona tıklayarak derslere gidebilir,mesaj atabilir,bilgilerini değiştirebilirler.
