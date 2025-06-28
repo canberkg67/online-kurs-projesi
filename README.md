@@ -14,6 +14,7 @@ NextJS, ShadCN, AuthJS Credentials Provider, Prisma, SQLite
 - npx prisma generate deyin. Aksi taktirde prisma işlemleri ve dolayısıyla giriş-veritabanı işlemi yapılamaz.
 - npm run dev ile geliştirme sunucusu açabilirsiniz.
 - Giriş yapan kullanıcı yukarıdaki admin hesabı ise admin dashboardına,user rolünde ise profile yönlendirilmektedir.
-- Ders ekleme ve düzenleme,kullanıcı silme admine has işlevlerdir.Kullanıcılar profillerinden butona tıklayarak derslere gidebilir,mesaj atabilir,bilgilerini değiştirebilirler.
+- Ders ekleme ve düzenleme,kullanıcı silme admine has işlevlerdir.Kullanıcılar profillerinden butona tıklayarak derslere gidebilir,mesaj atabilir,bilgilerini değiştirebilirler. Derslerin rotası /dersler.
 - İki kullanıcı arasındaki mesajların geçmişi sekmelerce tutulduğu gibi,gelen ve giden son üç mesaj da altta görülebilmektedir.Mesajlar temizlenebilmektedir.
+- env dosyası gerekli ayarlar-key ile birlikte reponun içindedir.Ignore edilmemiştir.
 
