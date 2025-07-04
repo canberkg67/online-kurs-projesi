@@ -40,7 +40,7 @@ model Lesson {
   slug      String   @unique  
   content   String
   authorId  String
-  author    User     @relation("UserLessons", fields: [authorId], references: [id])
+  author    User     @relation("UserLessons", fields: [authorId], references: [id], onDelete: Cascade)
   createdAt DateTime @default(now())
   category  Category? @relation(fields: [categoryId], references: [id])
   categoryId String?
@@ -52,8 +52,8 @@ model Message {
   createdAt  DateTime @default(now())
   senderId   String
   receiverId String
-  sender     User     @relation("MessagesSent", fields: [senderId], references: [id])
-  receiver   User     @relation("MessagesReceived", fields: [receiverId], references: [id])
+  sender     User     @relation("MessagesSent", fields: [senderId], references: [id], onDelete: Cascade)
+  receiver   User     @relation("MessagesReceived", fields: [receiverId], references: [id], onDelete: Cascade)
 }
 
 model Category {
@@ -67,5 +67,5 @@ model Profile {
   bio      String?
   avatar   String?
   userId   String   @unique
-  user     User     @relation(fields: [userId], references: [id])
+  user     User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
